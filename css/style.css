@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     background-color: #121827;
-    font-family: "Roboto Light", sans-serif;
+    font-family: Roboto, Arial, sans-serif;
     margin: 0;
     padding: 0;
     color: #e4e6ea;
