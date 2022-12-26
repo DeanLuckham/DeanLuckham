@@ -23,6 +23,7 @@ body {
 
 .header {
     height: 70px;
+    margin-bottom: 10px;
 }
 
 .header-content {
@@ -37,7 +38,7 @@ body {
 }
 
 .content div a {
-    color: #2493ff;
+    color: #63b0ff;
 }
 
 .hero {
@@ -49,6 +50,7 @@ body {
 
 .footer {
     height: 50px;
+    margin-top: 10px;
 }
 
 a {
