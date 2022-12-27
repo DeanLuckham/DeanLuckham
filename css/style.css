@@ -70,6 +70,10 @@ a {
     text-align: center;
 }
 
+.content.full-page {
+    flex-direction: column;
+}
+
 .right, .left {
     display: flex;
     align-items: center;
@@ -133,6 +137,10 @@ form .wide {
     width: calc(80% - 304px);
     height: 40px;
     font-size: 20px;
+}
+
+.highlighted-link {
+    color: #4094ee;
 }
 
 /*Footer*/
