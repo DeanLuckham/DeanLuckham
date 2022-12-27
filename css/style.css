@@ -130,7 +130,7 @@ form .wide {
 }
 
 .submit-button {
-    width: 40%;
+    width: calc(80% - 304px);
     height: 40px;
     font-size: 20px;
 }

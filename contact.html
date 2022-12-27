@@ -8,11 +8,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
   <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("contact-form").submit();
-    }
-  </script>
 </head>
 
 <header class="header">
@@ -54,13 +49,10 @@
                       maxlength="1000"
                       required></textarea>
           </div>
-          <input class="submit-button g-recaptcha"
-                 name="g-recaptcha-response"
+          <div class="g-recaptcha" data-sitekey="6LfZjbAjAAAAABb9DVGj5FjQBKoDct7nC0CYQuej"></div>
+          <input class="submit-button"
                  id="send-button"
                  type="submit"
-                 data-sitekey="6LexULAjAAAAAAYChuC6E98iG5MrR4BC7ObFWE2G"
-                 data-callback='onSubmit'
-                 data-action='submit'
                  value="Send">
         </form>
       </div>
