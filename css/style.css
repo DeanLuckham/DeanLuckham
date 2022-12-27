@@ -123,6 +123,7 @@ form {
 
 .form-item input, .form-item textarea {
     border: 2px solid #212121;
+    border-radius: 4px;
 }
 
 .text-input:invalid {
@@ -148,8 +149,8 @@ form .wide {
 }
 
 .left-img {
-    background-image: url('../images/ivana-cajina-asuyh-_ZX54-unsplash.jpg');
-    background-position: center;
+    background-image: url('../images/Contact-Page-IMG.jpg');
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
     width: 40vw;
