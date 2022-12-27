@@ -11,34 +11,77 @@ body {
     color: #e4e6ea;
 }
 
+a {
+    text-decoration: none;
+    color: #cad4da;
+}
+
 /*Header*/
 
 .header, .footer {
     color: #cad4da;
     display: flex;
     background-color: #202937;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .header {
     height: 70px;
     margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.header-content {
+.header-logo {
     font-weight: bold;
     font-size: 40px;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+.nav-link {
+    transition: all .2s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #ffffff;
 }
 
 /*Content*/
 
 .content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered {
+    justify-content: center;
     text-align: center;
 }
 
-.content div a {
-    color: #63b0ff;
+.right, .left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    width: 60vw;
+}
+
+.left {
+    width: 40vw;
 }
 
 .hero {
@@ -46,14 +89,56 @@ body {
     font-size: 35px;
 }
 
+.contact-form {
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    gap: 20px;
+}
+
+.form-item {
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.form-item label {
+    padding-bottom: 3px;
+}
+
+.form-item input, .form-item textarea {
+    border: 2px solid #212121;
+}
+
+.text-input:invalid {
+    border-color: red;
+}
+
+.text-input:valid {
+    border-color: green;
+}
+
+form .wide {
+    width: calc(80% + 20px);
+}
+
+.submit-button {
+    width: 40%;
+    height: 40px;
+    font-size: 20px;
+}
+
 /*Footer*/
 
 .footer {
     height: 50px;
     margin-top: 10px;
-}
-
-a {
-    text-decoration: none;
-    color: #cad4da;
+    justify-content: center;
 }
