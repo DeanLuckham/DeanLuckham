@@ -10,7 +10,7 @@
   <script src="https://www.google.com/recaptcha/api.js"></script>
   <script>
     function onSubmit(token) {
-      document.getElementById("demo-form").submit();
+      document.getElementById("contact-form").submit();
     }
   </script>
 </head>
@@ -35,7 +35,7 @@
         <div class="info-text" style="width: 80%">
           Get in contact by filling out the form below with your message, I'll respond as soon as possible.
         </div>
-        <form method="post" action="https://forms.un-static.com/forms/232e9ccfc1fef5d45090a11d750bb0c2906cc9d4">
+        <form id="contact-form" method="post" action="https://forms.un-static.com/forms/232e9ccfc1fef5d45090a11d750bb0c2906cc9d4">
           <div class="form-item">
             <label for="name">Name</label>
             <input class="text-input" id="name" type="text" name="name" maxlength="50" required>
