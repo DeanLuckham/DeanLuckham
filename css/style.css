@@ -29,7 +29,7 @@ a {
 }
 
 .header {
-    height: 70px;
+    height: 50px;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -87,18 +87,23 @@ a {
     flex-direction: column;
 }
 
+.content.row-wrap {
+    flex-flow: row wrap;
+}
+
 .right, .left {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 50vw;
 }
 
-.right {
-    width: 60vw;
-}
-
-.left {
+.vw40 {
     width: 40vw;
+}
+
+.vw60 {
+    width: 60vw;
 }
 
 .hero {
@@ -185,6 +190,6 @@ form .wide {
 /*Footer*/
 
 .footer {
-    height: 50px;
+    height: 40px;
     justify-content: center;
 }
