@@ -6,8 +6,10 @@ function updateParallax() {
     var scrollPct = Math.min(60, pos/scrollLength * 100 * (docHeight/winHeight) * 0.5);
 
     document.querySelectorAll('.parallax').forEach(elem => {
-        $(elem).css('backgroundPosition', '50% ' + (20 + scrollPct) + '%')
+        $(elem).css('backgroundPosition', '50% ' + (20 + scrollPct) + '%');
     })
 }
 
-window.onscroll = function () {updateParallax()};
+window.onscroll = function () {
+    updateParallax();
+};
