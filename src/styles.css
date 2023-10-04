@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --primary-colour: #0a1426;
+  --secondary-colour: #54a593;
+  --text-dark-gray: #8b95a4;
+}
+
+.bg-primary {
+  background-color: var(--primary-colour);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-colour);
+}
+
+.border-secondary {
+  border-color: var(--secondary-colour);
+}
+
+.text-secondary {
+  color: var(--secondary-colour);
+}
+
+.text-dark-gray {
+  color: var(--text-dark-gray);
+}
+
+body {
+  background-color: var(--primary-colour);
+}

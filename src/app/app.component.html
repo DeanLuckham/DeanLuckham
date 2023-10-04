@@ -1,8 +1,9 @@
-<div class="bg-slate-900 min-h-screen">
+<div class="min-h-screen flex flex-col">
   <header>
     <app-header></app-header>
   </header>
-  <section class="content">
+  <section class="content flex flex-col flex-grow">
     <router-outlet></router-outlet>
   </section>
+  <app-socials></app-socials>
 </div>

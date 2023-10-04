@@ -1,0 +1,9 @@
+svg {
+  fill: #FFF;
+  transition-duration: 300ms;
+}
+
+svg:hover {
+  scale: 110%;
+  fill: var(--secondary-colour)
+}
