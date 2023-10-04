@@ -8,6 +8,11 @@
   scale: 110%;
 }
 
+#nav-links a.active-link {
+  color: var(--secondary-colour);
+  scale: 110%;
+}
+
 button:hover {
   color: white;
 }

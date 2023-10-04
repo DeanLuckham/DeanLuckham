@@ -1,5 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {FormsModule, NgForm} from "@angular/forms";
+import {RecaptchaModule, RecaptchaFormsModule, RECAPTCHA_SETTINGS, RecaptchaSettings} from "ng-recaptcha";
+
+import { environment } from "../../environments/environment";
 
 @Component({
   selector: 'app-contact',
@@ -7,10 +11,27 @@ import { CommonModule } from '@angular/common';
   host: {
     class: 'flex-col flex flex-grow'
   },
-  imports: [CommonModule],
+  imports: [
+    CommonModule,
+    FormsModule,
+    RecaptchaModule
+  ],
+  providers: [{
+    provide: RECAPTCHA_SETTINGS,
+    useValue: {
+      siteKey: environment.recaptcha.siteKey
+    } as RecaptchaSettings
+  }],
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
 export class ContactComponent {
-
+  // public send(form: NgForm): void {
+  //   if(form.invalid) {
+  //     for(const control of Object.keys(form.controls)) {
+  //       form.controls[control].markAsTouched()
+  //     }
+  //     return;
+  //   }
+  // }
 }

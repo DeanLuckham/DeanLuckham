@@ -1,0 +1,59 @@
+@media screen and (max-device-width: 850px) {
+  #form-container {
+    flex-direction: column;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
+
+  #contact-intro {
+    max-width: 100%;
+  }
+
+  #small-text-fields {
+    flex-direction: column;
+  }
+
+  #small-text-fields div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-device-width: 850px) {
+  #contact-form {
+    width: 60%;
+  }
+
+  #small-text-fields div {
+    width: 48%;
+  }
+
+  #contact-intro {
+    max-width: 40%;
+  }
+}
+
+#contact-form .text-input {
+  background-color: lightgray;
+}
+
+#send-button:hover {
+  color: white;
+}
+
+#send-button:before {
+  transition-duration: 300ms;
+  content: "";
+  position: absolute;
+  background: var(--secondary-colour);
+  bottom: 0;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#send-button:hover:before {
+  top: 0;
+}

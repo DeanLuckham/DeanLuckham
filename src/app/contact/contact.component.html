@@ -1,3 +1,26 @@
 <div id="content" class="text-white flex flex-grow justify-center items-center">
-  <h1 class="text-gray-300 font-extrabold text-7xl">Coming Soon</h1>
+  <div id="form-container" class="flex justify-between gap-8 align-top p-20 w-full max-w-6xl">
+    <div id="contact-intro">
+      <h1 class="text-gray-300 font-extrabold text-7xl w-fit">Contact Me</h1>
+      <br>
+      <p class="text-dark-gray text-lg">
+        If you have an enquiry, or just want to get in touch, send me a message
+      </p>
+    </div>
+    <form id="contact-form" method="post" action="https://forms.un-static.com/forms/232e9ccfc1fef5d45090a11d750bb0c2906cc9d4" class="flex flex-col gap-2 text-lg text-secondary">
+      <div id="small-text-fields" class="flex justify-between">
+        <div class="flex flex-col">
+          <label for="name" class="pb-2">Name</label>
+          <input id="name" type="text" name="name" required maxlength="50" class="h-8 text-black text-input">
+        </div>
+        <div class="flex flex-col">
+          <label for="email" class="pb-2">Email</label>
+          <input id="email" type="email" name="email" required class="h-8 text-black text-input"></div>
+      </div>
+      <label for="message" class="pb-1">Message</label>
+      <textarea id="message" name="message" required maxlength="1000" class="h-20 text-black text-input"></textarea>
+      <re-captcha id="recaptcha" name="recaptcha"></re-captcha>
+      <button id="send-button" type="submit" class="submit-button mt-1 h-12 text-secondary font-bold text-lg bg-primary border-secondary rounded border-2 hover:scale-105 duration-300">Send</button>
+    </form>
+  </div>
 </div>
