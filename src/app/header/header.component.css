@@ -1,0 +1,31 @@
+#header-container {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 0.5;
+}
+
+#nav-links a:hover {
+  color: var(--secondary-colour);
+  scale: 110%;
+}
+
+button:hover {
+  color: white;
+}
+
+button:before {
+  border-radius: .25rem;
+  transition-duration: 300ms;
+  content: "";
+  position: absolute;
+  background: var(--secondary-colour);
+  bottom: 0;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+button:hover:before {
+  top: 0;
+  scale: 110%;
+}

@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 import {RouterLink} from "@angular/router";
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-home',
   standalone: true,
+  host: {
+    class: 'flex-col flex flex-grow'
+  },
   imports: [
     CommonModule,
     RouterLink,
   ],
-  templateUrl: './header.component.html',
-  styleUrls: ['./header.component.css']
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css']
 })
-export class HeaderComponent {
+export class HomeComponent {
 
 }
