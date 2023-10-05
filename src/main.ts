@@ -8,7 +8,9 @@ import routeConfig from "./app/app.routes";
 bootstrapApplication(AppComponent,
   {
     providers: [
-      provideRouter(routeConfig)
+      provideRouter(
+        routeConfig
+      ),
     ],
   }
 )
