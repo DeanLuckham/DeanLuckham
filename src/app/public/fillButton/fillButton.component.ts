@@ -17,7 +17,6 @@ export class FillButtonComponent {
   @Input() route?: string;
   @Input() content?: string;
   @Input() href?: string;
-  @Input() external?: string;
 
   constructor() {
 
