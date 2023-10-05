@@ -1,4 +1,4 @@
-<button *ngIf="!external" routerLink="{{route}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="text-secondary font-bold text-lg bg-primary border-secondary rounded border-2 duration-300 pl-4 pr-4 pt-2 pb-2">{{content}}</button>
-<a *ngIf="external" href="{{href}}">
-  <button *ngIf="external" class="text-secondary font-bold text-lg bg-primary border-secondary rounded border-2 duration-300 pl-4 pr-4 pt-2 pb-2">{{content}}</button>
+<button *ngIf="route" routerLink="{{route}}" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="text-secondary font-bold text-lg bg-primary border-secondary rounded border-2 duration-300 pl-4 pr-4 pt-2 pb-2">{{content}}</button>
+<a *ngIf="!route" href="{{href}}">
+  <button *ngIf="!route" class="text-secondary font-bold text-lg bg-primary border-secondary rounded border-2 duration-300 pl-4 pr-4 pt-2 pb-2">{{content}}</button>
 </a>
