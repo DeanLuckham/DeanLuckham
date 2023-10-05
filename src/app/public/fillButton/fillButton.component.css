@@ -1,0 +1,20 @@
+button:hover, .active {
+  color: white;
+  scale: 110%;
+}
+
+button:before {
+  transition-duration: 300ms;
+  content: "";
+  position: absolute;
+  background: var(--secondary-colour);
+  bottom: 0;
+  top: 100%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+button:hover:before, .active:before {
+  top: 0;
+}

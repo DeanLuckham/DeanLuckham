@@ -3,6 +3,7 @@ import {HomeComponent} from "./home/home.component";
 import {BlogComponent} from "./blog/blog.component";
 import {ContactComponent} from "./contact/contact.component";
 import {AboutComponent} from "./about/about.component";
+import {CvComponent} from "./cv/cv.component";
 
 const routeConfig: Routes = [
   {
@@ -29,6 +30,11 @@ const routeConfig: Routes = [
     path: 'about',
     component: AboutComponent,
     title: 'About',
+  },
+  {
+    path: 'cv',
+    component: CvComponent,
+    title: 'CV',
   },
 ];
 

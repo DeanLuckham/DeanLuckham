@@ -1,3 +1,9 @@
+@media (max-device-width: 34rem) {
+  #logo-container p {
+    display: none;
+  }
+}
+
 #header-container {
   border-bottom-width: 1px;
   --tw-border-opacity: 0.5;
@@ -13,8 +19,9 @@
   scale: 110%;
 }
 
-button:hover {
+button:hover, .active-button-link {
   color: white;
+  scale: 110%;
 }
 
 button:before {
@@ -30,7 +37,7 @@ button:before {
   z-index: -1;
 }
 
-button:hover:before {
+button:hover:before, .active-button-link:before {
   top: 0;
   scale: 110%;
 }
