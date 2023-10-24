@@ -36,6 +36,16 @@ const routeConfig: Routes = [
     component: CvComponent,
     title: 'CV',
   },
+  {
+    path: 'odin',
+    loadChildren: () =>
+      import('./odin/odin.routes')
+        .then(m => m.OdinRoutes)
+  },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
 
 export default routeConfig;

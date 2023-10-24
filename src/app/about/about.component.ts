@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-about',
@@ -7,7 +8,7 @@ import { CommonModule } from '@angular/common';
   host: {
     class: 'flex-col flex flex-grow'
   },
-  imports: [CommonModule],
+    imports: [CommonModule, RouterLink],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.css']
 })
