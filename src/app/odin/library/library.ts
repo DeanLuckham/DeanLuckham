@@ -7,13 +7,13 @@ export class Library {
     this.books = []
   }
 
-  async addBook(newBook: Book) {
+  addBook(newBook: Book): void {
     if (!this.isInLibrary(newBook)) {
       this.books.push(newBook)
     }
   }
 
-  async removeBook(title: string) {
+  removeBook(title: string): void {
     this.books = this.books.filter(b => b.title !== title)
   }
 

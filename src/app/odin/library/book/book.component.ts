@@ -10,5 +10,5 @@ import {Book} from "../book";
   styleUrls: ['./book.component.css']
 })
 export class BookComponent {
-  @Input() book!: Book
+  @Input() book?: Book
 }

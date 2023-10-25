@@ -1,4 +1,5 @@
 import {Injectable} from '@angular/core';
+
 import {Book} from "./book";
 import {Library} from "./library";
 
@@ -8,12 +9,12 @@ import {Library} from "./library";
 export class LibraryService {
   library: Library = new Library()
 
-  async addBook(book: Book): Promise<void> {
-    await this.library.addBook(book)
+  addBook(book: Book): void {
+    this.library.addBook(book)
   }
 
-  async removeBook(title: string): Promise<void> {
-    return await this.library.removeBook(title)
+  removeBook(title: string): void {
+    this.library.removeBook(title)
   }
 
   async getBook(title: string): Promise<Book | undefined> {
