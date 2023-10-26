@@ -1,4 +1,4 @@
-import {Component, inject} from '@angular/core';
+import {Component, inject, ViewEncapsulation} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ActivatedRoute} from "@angular/router";
 
@@ -11,7 +11,8 @@ import {Title} from "@angular/platform-browser";
   standalone: true,
   imports: [CommonModule],
   templateUrl: './blog-post.component.html',
-  styleUrls: ['./blog-post.component.css']
+  styleUrls: ['./blog-post.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class BlogPostComponent {
   route: ActivatedRoute = inject(ActivatedRoute)
