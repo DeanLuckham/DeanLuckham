@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 import {RouterOutlet} from "@angular/router";
 
 @Component({
-  selector: 'app-blog',
+  selector: 'app-odin',
   standalone: true,
   host: {
     class: 'flex-col flex flex-grow'
   },
   imports: [CommonModule, RouterOutlet],
-  templateUrl: './blog.component.html',
-  styleUrls: ['./blog.component.css']
+  templateUrl: './odin.component.html',
+  styleUrls: ['./odin.component.css']
 })
-export class BlogComponent {
+export class OdinComponent {
 
 }

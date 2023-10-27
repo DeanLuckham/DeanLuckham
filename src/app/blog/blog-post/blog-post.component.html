@@ -1,0 +1,7 @@
+<div *ngIf="!post" class="h-full flex justify-center items-center text-gray-300 font-extrabold text-5xl">
+  <h1>Post not found</h1>
+</div>
+<div *ngIf="post" id="post-content" class="text-gray-300">
+  <h1>{{post.title}}</h1>
+  <div [innerHTML]="post.content" class="break-words"></div>
+</div>

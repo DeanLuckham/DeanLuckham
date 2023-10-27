@@ -1,6 +1,7 @@
-import { Component, Input } from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterLink, RouterLinkActive} from "@angular/router";
+import {Book} from "../../odin/library/book";
 
 @Component({
   selector: 'app-fillButton',
@@ -15,8 +16,8 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class FillButtonComponent {
   @Input() route?: string;
-  @Input() content?: string;
   @Input() href?: string;
+  @Input() content?: string;
 
   constructor() {
 

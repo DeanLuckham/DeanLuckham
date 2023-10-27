@@ -1,0 +1,31 @@
+<div id="search-container" class="flex justify-center gap-4 mb-4">
+  <input type="text" name="search" id="search" placeholder="Search" #searchBox (input)="filterPosts(searchBox.value)" class="rounded-2xl bg-slate-800 hover:bg-slate-700 outline-0">
+</div>
+<div *ngIf="posts" id="post-cards">
+  <div *ngFor="let post of posts" routerLink="post/{{post.id}}" class="flex justify-between m-4 rounded border-secondary border-2 bg-slate-800 shadow hover:cursor-pointer hover:scale-105 duration-300">
+    <div id="text-container" class="flex flex-col justify-between w-full p-4">
+      <div id="content-section" class="overflow-ellipsis">
+        <div id="title" class="font-bold text-5xl text-gray-300 pb-4">
+          {{post.title}}
+        </div>
+        <div id="content-preview" [innerHTML]="post.previewContent" class="text-dark-gray break-words max-h-36 overflow-hidden"></div>
+      </div>
+      <div id="info-bar" class="flex justify-between text-dark-gray text-sm flex-wrap">
+        <div id="tags" class="flex gap-2">
+          <div *ngFor="let tag of post.tags" id="tag">
+            {{tag}}
+          </div>
+        </div>
+        <div id="date">
+          {{post.created.toDateString()}}
+        </div>
+      </div>
+    </div>
+    <div id="image-container" class="h-full">
+      <img src="{{post.previewImgURL}}" alt="" height="720px" width="960px">
+    </div>
+  </div>
+</div>
+<div *ngIf="posts.length === 0" class="h-full flex justify-center pt-4 text-gray-300 font-extrabold text-5xl">
+  <h2>No posts found</h2>
+</div>

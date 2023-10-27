@@ -1,0 +1,5 @@
+#books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 12rem);
+  grid-template-rows: repeat(auto-fit, 24rem);
+}
