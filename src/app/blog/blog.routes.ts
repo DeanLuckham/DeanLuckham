@@ -14,6 +14,10 @@ export const BlogRoutes: Routes = [
         component: BlogDashComponent,
         title: "Blog",
       },
+      // {
+      //   path: 'tag/:tag',
+      //   component: BlogDashComponent,
+      // },
       {
         path: 'post/:id',
         component: BlogPostComponent,

@@ -26,6 +26,6 @@
     </div>
   </div>
 </div>
-<!--<div *ngIf="!filteredPosts" class="h-full flex justify-center items-center text-gray-300 font-extrabold text-5xl">-->
-<!--  <h2>No posts found</h2>-->
-<!--</div>-->
+<div *ngIf="posts.length === 0" class="h-full flex justify-center pt-4 text-gray-300 font-extrabold text-5xl">
+  <h2>No posts found</h2>
+</div>
