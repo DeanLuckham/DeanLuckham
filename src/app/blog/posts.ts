@@ -3,7 +3,7 @@ import {Post} from "./post";
 const Posts: Post[] = [
   {
     id: 1,
-    title: "My First Post",
+    title: "My First Blog Post",
     author: "Dean Luckham",
     created: new Date(2023, 9, 26),
     imgURL: "../../../assets/img/151.JPG",
@@ -25,7 +25,7 @@ const Posts: Post[] = [
       "module. I'm planning to talk here about my experiences studying with the OU, what I think of the modules and material, " +
       "how I'm finding the exams, and anything else I feel like discussing.</p>" +
       "<h3>TM111</h3>" +
-      "<p>The first module of the Computing & IT degree is <em>TM111 - Introduction to Computing and Information Technology 1</em>. " +
+      "<p>The first module of the Computing & IT degree is <a href='https://www.open.ac.uk/courses/modules/tm111'>TM111 - Introduction to Computing and Information Technology 1</a>. " +
       "As the name suggests this serves as a basic introduction to the subject covering things like the development of " +
       "the computer, basic HTML, programming in OU Build (the OU's lightly modified version of Scratch), and network and " +
       "internet technologies.</p><p>It seems to serve its purpose just fine and gives a good overview of the basic concepts, " +
@@ -35,7 +35,7 @@ const Posts: Post[] = [
       "(well, except for losing marks for not showing enough of the really basic working in maths questions, damn you A-Level Further Maths!) " +
       "and passed the module with a Distinction.</p><p>One down, many more to go.</p>" +
       "<h3>TM112</h3>" +
-      "<p><em>TM112 - Introduction to Computing and Information Technology 2</em> is the direct follow on from TM111 covering " +
+      "<p><a href='https://www.open.ac.uk/courses/modules/tm112'>TM112 - Introduction to Computing and Information Technology 2</a> is the direct follow on from TM111 covering " +
       "more regarding technology, data and the internet. This module also focuses heavily on programming in Python. Similarly " +
       "to TM111 previous experience in the area will make this a breeze, which is allowing me to get a good headstart. " +
       "I am noticing though that a good number of people are struggling with binary and Python and I can understand " +
@@ -44,7 +44,7 @@ const Posts: Post[] = [
       "<p>TMA01 is due in a couple of weeks time and I've already completed it. There were some questions on " +
       "scientific notation, binary arithmetic, some small coding problems and one slightly larger one which i expect some " +
       "with no prior Python experience with struggle with.</p>" +
-      "<p>Next up are TM129 - Technologies in practice & MST124 - Essential mathematics 1 which I'm looking forward to " +
+      "<p>Next up are <a href='https://www.open.ac.uk/courses/modules/tm129'>TM129 - Technologies in practice</a> & <a href='https://www.open.ac.uk/courses/modules/mst124'>MST124 - Essential mathematics 1</a> which I'm looking forward to " +
       "and should serve as a good refresher of my A-Level maths.</p><p><br></p><p>That's all I have for now, thanks for joining " +
       "me on my journey. Now it's time to get back to work.</p>" +
       "</div>",
