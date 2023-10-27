@@ -1,8 +1,8 @@
 #post-content h1 {
   font-weight: 800;
-  font-size: 3.5rem;
+  font-size: 3.75rem;
   text-align: center;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 
 .post-content p {
@@ -25,4 +25,15 @@
   font-weight: 600;
   font-size: 2.25rem;
   padding: 0.25rem 0;
+}
+
+.post-content a {
+  font-weight: 700;
+  font-style: italic;
+  color: var(--secondary-colour);
+  transition-duration: 300ms;
+}
+
+.post-content a:hover {
+  @apply text-gray-300
 }
