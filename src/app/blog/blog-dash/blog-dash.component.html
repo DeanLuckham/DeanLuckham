@@ -1,5 +1,5 @@
 <div id="search-container" class="flex justify-center gap-4 mb-4">
-  <input type="text" name="search" id="search" placeholder="Search" #searchBox (input)="filterPosts(searchBox.value)" class="rounded-2xl bg-slate-800 hover:bg-slate-700 outline-0">
+  <input type="text" name="search" id="search" placeholder="Search" #searchBox (input)="filterPosts(searchBox.value)" class="rounded-2xl bg-slate-800 hover:bg-slate-700 outline-0 duration-100">
 </div>
 <div *ngIf="posts" id="post-cards">
   <div *ngFor="let post of posts" routerLink="post/{{post.id}}" class="flex justify-between m-4 rounded border-secondary border-2 bg-slate-800 shadow hover:cursor-pointer hover:scale-105 duration-300">
