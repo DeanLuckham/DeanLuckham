@@ -14,11 +14,5 @@ import {Meta} from "@angular/platform-browser";
   styleUrls: ['./blog.component.css']
 })
 export class BlogComponent {
-  constructor(private meta: Meta) {
-    this.meta.addTags([
-      {name: 'description', content: 'Blog of Dean Luckham, software development student studying BSc Computing & IT (Software) with the Open University'},
-      {name: 'author', content: 'Dean Luckham'},
-      {name: 'keywords', content: 'Software, Development, Computing, IT, Blog, Open, University, OU'}
-    ])
-  }
+
 }
