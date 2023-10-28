@@ -8,7 +8,7 @@ const routeConfig: Routes = [
   {
     path: '',
     component: HomeComponent,
-    title: 'Dean Luckham',
+    title: 'Dean Luckham | Software Development Student',
   },
   {
     path: 'home',
