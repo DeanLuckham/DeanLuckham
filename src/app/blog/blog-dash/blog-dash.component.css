@@ -1,17 +1,30 @@
 #search {
-  width: max(30rem, 70%);
+  width: max(10rem, 70%);
   height: 2.5rem;
   padding: 2px 10px;;
 }
 
 #post-cards {
-  display: grid;
-  grid-auto-rows: 20rem;
-  /*grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));*/
+  /*display: grid;*/
+  /*grid-auto-rows: fit-content(100%);*/
+  display: flex;
+  flex-direction: column;
 }
 
-#image-container {
-  width: 80%;
+@media screen and (min-device-width: 600px) {
+  #image-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-device-width: 600px) {
+  #image-container {
+    width: 100%;
+  }
+
+  .card {
+    flex-direction: column-reverse;
+  }
 }
 
 #image-container img {
@@ -20,4 +33,12 @@
   object-fit: cover;
   border-bottom-right-radius: .25rem;
   border-top-right-radius: .25rem;
+}
+
+#text-container {
+  min-height: 100%;
+}
+
+.card {
+  min-height: 15rem;
 }
