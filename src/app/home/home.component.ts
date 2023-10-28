@@ -21,7 +21,7 @@ export class HomeComponent {
     this.meta.addTags([
       {name: 'description', content: 'Personal and professional website and blog of Dean Luckham, software development student studying BSc Computing & IT (Software) with the Open University'},
       {name: 'author', content: 'Dean Luckham'},
-      {name: 'keywords', content: 'Software, Development, Computing, IT, Open, University'}
+      {name: 'keywords', content: 'Software, Development, Computing, IT, Open, University, West Sussex, Bognor Regis'}
     ])
   }
 }

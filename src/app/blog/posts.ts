@@ -42,8 +42,8 @@ const Posts: Post[] = [
       "where they're coming from, the OU material is quite lacking and doesn't do a great job of explaining many of the " +
       "concepts, so you need to be able to find the information you need online, a critical skill to develop.</p>" +
       "<p>TMA01 is due in a couple of weeks time and I've already completed it. There were some questions on " +
-      "scientific notation, binary arithmetic, some small coding problems and one slightly larger one which i expect some " +
-      "with no prior Python experience with struggle with.</p>" +
+      "scientific notation, binary arithmetic, some small coding problems and one slightly larger one which I expect some " +
+      "with no prior Python experience will struggle with.</p>" +
       "<p>Next up are <a href='https://www.open.ac.uk/courses/modules/tm129'>TM129 - Technologies in practice</a> & <a href='https://www.open.ac.uk/courses/modules/mst124'>MST124 - Essential mathematics 1</a> which I'm looking forward to " +
       "and should serve as a good refresher of my A-Level maths.</p><p><br></p><p>That's all I have for now, thanks for joining " +
       "me on my journey. Now it's time to get back to work.</p>" +
