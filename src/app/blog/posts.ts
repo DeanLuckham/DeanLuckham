@@ -6,7 +6,6 @@ const Posts: Post[] = [
     title: "My First Blog Post",
     author: "Dean Luckham",
     created: new Date(2023, 9, 26),
-    imgURL: "../../../assets/img/151.JPG",
     previewImgURL: "../../../assets/img/152.JPG",
     content: "<div class='post-content'>" +
       "<p><em>Hey,</em> my name is Dean and this is my blog where I'll be talking about my time" +
