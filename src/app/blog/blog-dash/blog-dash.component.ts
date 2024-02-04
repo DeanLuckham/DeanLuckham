@@ -9,6 +9,9 @@ import {ActivatedRoute, RouterLink} from "@angular/router";
   selector: 'app-blog-dash',
   standalone: true,
   imports: [CommonModule, RouterLink, NgOptimizedImage],
+  host: {
+    class: "max-w-6xl"
+  },
   templateUrl: './blog-dash.component.html',
   styleUrls: ['./blog-dash.component.css']
 })
@@ -21,10 +24,12 @@ export class BlogDashComponent implements OnInit {
 
   ngOnInit() {
     this.getPosts()
-    if(this.route.toString().includes('tag/')) {
-      this.filterPosts(this.route.snapshot.params['tag'])
-    }
-    this.location.replaceState('blog')
+    // if(this.route.toString().includes('tag/')) {
+    //   this.filterPosts(this.route.snapshot.params['tag'])
+    // }
+    // this.location.replaceState('blog')
+
+    window.scrollTo({top: 0})
   }
 
   getPosts(): void {

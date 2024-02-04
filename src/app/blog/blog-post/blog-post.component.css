@@ -1,3 +1,25 @@
+@media screen and (min-device-width: 850px) {
+  .reactive {
+    padding: 2rem 5rem 5rem;
+  }
+}
+
+@media screen and (max-device-width: 850px) {
+  .reactive {
+    padding: 2rem;
+  }
+}
+
+.post-content > *:not(img) {
+  max-width: 72rem;
+  margin: auto;
+}
+
+#post-content img {
+  max-width: 100%;
+  padding-bottom: 1rem;
+}
+
 #post-content h1 {
   font-weight: 800;
   font-size: 3.75rem;
@@ -25,6 +47,12 @@
   font-weight: 600;
   font-size: 2.25rem;
   padding: 0.25rem 0;
+}
+
+.post-content h4 {
+  font-weight: 500;
+  font-size: 1.75rem;
+  padding: 0.1rem 0;
 }
 
 .post-content a {

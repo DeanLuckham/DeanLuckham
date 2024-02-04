@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {FormsModule, NgForm} from "@angular/forms";
 import {RecaptchaModule, RecaptchaFormsModule, RECAPTCHA_SETTINGS, RecaptchaSettings} from "ng-recaptcha";
 
-import { environment } from "../../environments/environment";
+import { environmentProd } from "../../environments/environment.prod";
 
 @Component({
   selector: 'app-contact',
@@ -19,7 +19,7 @@ import { environment } from "../../environments/environment";
   providers: [{
     provide: RECAPTCHA_SETTINGS,
     useValue: {
-      siteKey: environment.recaptcha.siteKey
+      // siteKey: environmentProd.recaptcha.siteKey
     } as RecaptchaSettings
   }],
   templateUrl: './contact.component.html',

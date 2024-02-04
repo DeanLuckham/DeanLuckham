@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterLink} from "@angular/router";
+
 import {FillButtonComponent} from "../public/fillButton/fillButton.component";
-import {Meta} from "@angular/platform-browser";
+
+import {environment} from "../../environments/environment";
+const s3Url: string = environment.s3Url
 
 @Component({
   selector: 'app-cv',
@@ -20,4 +23,5 @@ import {Meta} from "@angular/platform-browser";
 })
 export class CvComponent {
 
+  protected readonly s3Url = s3Url;
 }

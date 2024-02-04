@@ -3,7 +3,6 @@ export interface Post {
   title: string,
   author: string,
   created: Date,
-  imgURL: string,
   previewImgURL: string,
   content: string,
   previewContent: string,
