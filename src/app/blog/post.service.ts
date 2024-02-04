@@ -7,9 +7,13 @@ import Posts from "./posts"
   providedIn: 'root'
 })
 export class PostService {
-  posts: Post[] = Posts
+  private posts: Post[] = Posts
 
   constructor() {
+    this.sortByDateDesc()
+  }
+
+  sortByDateDesc(): void {
     this.posts.sort(
       (a, b) => b.created.getTime() - a.created.getTime()
     )

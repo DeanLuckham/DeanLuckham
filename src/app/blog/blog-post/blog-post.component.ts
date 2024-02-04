@@ -1,4 +1,4 @@
-import {Component, inject, ViewEncapsulation} from '@angular/core';
+import {Component, inject, OnInit, ViewEncapsulation} from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {ActivatedRoute} from "@angular/router";
 
@@ -14,18 +14,21 @@ import {Title} from "@angular/platform-browser";
   styleUrls: ['./blog-post.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class BlogPostComponent {
+export class BlogPostComponent implements OnInit{
   route: ActivatedRoute = inject(ActivatedRoute)
   post: Post | undefined
 
   constructor(private postService: PostService, private titleService: Title) {
     const postID = parseInt(this.route.snapshot.params['id'], 10)
-    console.log(postID)
     this.post = this.postService.getPostByID(postID)
     if(this.post) {
       this.titleService.setTitle(this.post.title)
     } else {
       this.titleService.setTitle("Post Not Found")
     }
+  }
+
+  ngOnInit() {
+    window.scrollTo({top: 0})
   }
 }
