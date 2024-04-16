@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {FormsModule, NgForm} from "@angular/forms";
 import {RecaptchaModule, RecaptchaFormsModule, RECAPTCHA_SETTINGS, RecaptchaSettings} from "ng-recaptcha";
 
-import { environmentProd } from "../../environments/environment.prod";
+import { environment } from "../../environments/environment";
 
 @Component({
   selector: 'app-contact',
