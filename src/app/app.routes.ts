@@ -36,12 +36,6 @@ const routeConfig: Routes = [
         .then(m => m.BlogRoutes)
   },
   {
-    path: 'odin',
-    loadChildren: () =>
-      import('./odin/odin.routes')
-        .then(m => m.OdinRoutes)
-  },
-  {
     path: '**',
     redirectTo: '',
   },
