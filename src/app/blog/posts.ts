@@ -195,6 +195,68 @@ const Posts: Post[] = [
       "Personal",
     ],
   },
+  {
+    id: 3,
+    title: "Two Modules Down",
+    author: "Dean Luckham",
+    created: new Date(2024, 3, 30),
+    previewImgURL: `${imgURL}h3kuhYUCE9A.jpg`,
+    content: `<div class='post-content'>
+    <p><em class='text-secondary font-bold'>Hey,</em> it's been a while since I last posted an update on my Open University studies, since then I've
+    finished TM112 and have start TM129 and MST124, the last 2 level 1 modules I need to take before starting the level 2
+    modules.</p>
+    <h2>TM112</h2>
+    <p><a href='https://www.open.ac.uk/courses/modules/tm112'>TM112 - Introduction to Computing and Information Technology 2</a>
+    is the second required introductory module expanding on the content of TM111, touching on a range of areas of IT, Python,
+    and the basics of cybersecurity. If you have some experience in IT, even just from personal use, you'll likely find
+    most of this to be stuff you're already familiar with, so it will be quite easy.</p>
+    <p>Assessment for this module takes the form of 3 TMAs (tutor marked assessments) with some practical questions
+    and some more exploratory essay style questions. Me not being a huge fan of essay questions I was not too confident
+    going into the TMAs, not for a lack of knowledge of the subject material. It all went better than expected however,
+    as I find it often does, and I got good scores in all the assessments resulting in a Distinction for the module, making
+    the score 2 for 2.</p>
+    <h2>TM129</h2>
+    <p><a href='https://www.open.ac.uk/courses/modules/tm129'>TM129 - Technologies in practice</a> is the third required
+    level 1 module. It's broken into three blocks each focusing on a different area, Networking, Operating Systems, and
+    Robotics.</p>
+    <p>The networking section follows the Cisco Networking Essentials course, which provides a detailed overview of networking
+    as well as some specifics regarding cisco devices, a great foundation for everyone. Later modules cover the material
+    working towards a CCNA certification if you want to take that route.</p>
+    <p>The operating systems block is where I am currently, it introduces a lot of people to Linux and virtualisation for the first time
+    and takes a look at how operating systems work behind the scenes. The content for this block seems pretty good so far,
+    although I've noticed that a lot of people who don't have experience with virtualisation or Linux have been having
+    a lot more difficulty.</p>
+    <p>The Robotics block is still to come and I haven't looked ahead to it much. It is contained in a Jupyter notebook
+    and seems to focus heavily on Python, great for me considering I'm already quite familiar with both of these things.</p>
+    <h2>MST124</h2>
+    <p>For your final level 1 module you have the choice of two maths modules, <a href="https://www.open.ac.uk/courses/modules/mu123">MU123 - Discovering Mathematics</a>
+    and <a href='https://www.open.ac.uk/courses/modules/mst124'>MST124 - Essential mathematics 1</a>, the former being
+    roughly equivalent to GCSE level and the latter to A-Level (Maths and Further Maths). You can choose whichever module
+    better matches your ability level.</p>
+    <p>I studied Maths and Further Maths at A-Level, so chose MST124. The module starts with a brief recap of basic algebra
+    and covers Trigonometry, Calculus, Matrices and Complex Numbers. It's definitely quite heavy and fast-paced which
+    might be a struggle for some. Assessment is 4 TMA and 4 CMA (computer marked assessments, online quizzes) and a final
+    exam, currently done remotely, which accounts for 80% of your overall grade. With 1 TMA and 2 CMAs down I'm currently
+    at 100%, hopefully I can keep that up.</p>
+    <h2>Level 2</h2>
+    <p>Next up is the level 2 modules, this is the point where you need to choose which path you want to take which will
+    change which modules are available to you. I've chosen the Software path and already booked onto my next module
+    <a href='https://www.open.ac.uk/courses/modules/m250'>M250 - Object-oriented Java programming</a> to start in October.</p>
+    <h2>Current Module Results</h2>
+    <h4>Level 1</h4>
+    <p>TM111 - Distinction<br>TM112 - Distinction<br>TM129 - Ongoing<br>MST124 - Ongoing</p>
+    </div>`,
+    previewContent: `<p><em class='text-secondary font-bold'>Hey,</em> it's been a while since I last posted an update on my Open University studies, since then I've
+finished TM112 and have start TM129 and MST124, the last 2 level 1 modules I need to take before starting the level 2
+modules.</p>`,
+    tags: [
+      "OU",
+      "TM112",
+      "TM129",
+      "MST124",
+      "Personal",
+    ],
+  },
 ]
 
 export default Posts
