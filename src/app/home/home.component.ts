@@ -19,9 +19,9 @@ import {Meta} from "@angular/platform-browser";
 export class HomeComponent {
   constructor(private meta: Meta) {
     this.meta.addTags([
-      {name: 'description', content: 'Personal and professional website and blog of Dean Luckham, software development student studying BSc Computing & IT (Software) with the Open University'},
+      {name: 'description', content: 'Personal and professional website and blog of Dean Luckham, service desk engineer and software development student studying BSc Computing & IT (Software) with the Open University'},
       {name: 'author', content: 'Dean Luckham'},
-      {name: 'keywords', content: 'Software, Development, Computing, IT, Open, University, West Sussex, Bognor Regis'}
+      {name: 'keywords', content: 'Software, Development, Computing, IT, Service Desk, Open, University, West Sussex, Bognor Regis'}
     ])
   }
 }

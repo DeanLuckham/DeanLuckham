@@ -22,12 +22,12 @@ const routeConfig: Routes = [
   {
     path: 'about',
     component: AboutComponent,
-    title: 'About',
+    title: 'About | Dean Luckham',
   },
   {
     path: 'cv',
     component: CvComponent,
-    title: 'CV',
+    title: 'CV | Dean Luckham',
   },
   {
     path: 'blog',

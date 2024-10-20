@@ -22,7 +22,7 @@ export class BlogPostComponent implements OnInit{
     const postID = parseInt(this.route.snapshot.params['id'], 10)
     this.post = this.postService.getPostByID(postID)
     if(this.post) {
-      this.titleService.setTitle(this.post.title)
+      this.titleService.setTitle(this.post.title + ' | Dean Luckham')
     } else {
       this.titleService.setTitle("Post Not Found")
     }

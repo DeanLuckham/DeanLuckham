@@ -12,7 +12,7 @@ export const BlogRoutes: Routes = [
       {
         path: '',
         component: BlogDashComponent,
-        title: "Blog",
+        title: "Blog | Dean Luckham",
       },
       // {
       //   path: 'tag/:tag',

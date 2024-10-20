@@ -4,6 +4,7 @@ import {provideRouter} from "@angular/router";
 import {AppComponent} from "./app/app.component";
 
 import routeConfig from "./app/app.routes";
+import {provideAnimations} from "@angular/platform-browser/animations";
 
 bootstrapApplication(AppComponent,
   {
@@ -11,6 +12,7 @@ bootstrapApplication(AppComponent,
       provideRouter(
         routeConfig
       ),
+      provideAnimations(),
     ],
   }
 )
