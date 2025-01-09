@@ -1,11 +1,39 @@
 @media screen and (min-device-width: 850px) {
-  #main {
-    padding: 5rem;
+  .responsive {
+    padding: 0 5rem;
+  }
+
+  .narrow-only {
+    display: none;
   }
 }
 
 @media screen and (max-device-width: 850px) {
-  #main {
-    padding: 2rem;
+  .responsive {
+    padding: 0 2rem;
   }
+
+  .wide-only {
+    display: none;
+  }
+}
+
+.responsive {
+  @apply max-w-6xl
+}
+
+#cv {
+  width: 100%;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.full-height {
+  min-height: calc(100vh - 4rem);
+}
+
+#skills {
+  background-color: #323335;
 }

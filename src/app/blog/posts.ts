@@ -256,6 +256,60 @@ modules.</p>`,
       "MST124",
       "Personal",
     ],
+  },{
+    id: 4,
+    title: "New Year, New Modules",
+    author: "Dean Luckham",
+    created: new Date(2025, 1, 10),
+    previewImgURL: `${imgURL}5mj5jLhYWpY.jpg`,
+    content: `<div class='post-content'>
+    <p>Wow, it's been a while!</p>
+    <p>I've been busy since the last time I posted here, I've completed the first section of my OU degree, started in a
+    new role in the IT industry, and got back to regularly exercising to keep myself a little healthier.</p>
+    <h2>Finishing Section 1</h2>
+    <p>Last time I talked about TM129 and MST124, I've now finished both.</p>
+    <p><a href='https://www.open.ac.uk/courses/modules/tm129'>TM129 - Technologies in practice</a>, covered networking,
+    Operating Systems and Robotics. The networking section follows Cisco's networking essentials which is great,
+    but it's hard to see what value the OU offers in this section. Operating Systems gives an overview of OS concepts
+    and some of the basics of Linux, but doesn't really offer much in the way of detail and doesn't give a great idea of
+    what Linux can actually offer for normal, everyday users, it gives the impression that Linux is a niche OS for
+    nerds, while also failing to really show how powerful it can be. Robotics is mostly discussion of social impacts and
+    ethics of robotics and particularly AI, which is understandable given the current climate, meaning it's very discussion
+    and essay heavy. Because of being overall very essay heavy I did not particularly enjoy it, and while passing, didn't
+    do especially well. Still, at least section 1 modules don't count towards your final degree classification.</p>
+    <p><a href='https://www.open.ac.uk/courses/modules/mst124'>MST124 - Essential mathematics 1</a> is the more advanced
+    of the maths modules on offer, of which one is required, which is roughly equivalent to A-Level maths, dipping into
+    some slightly more advanced areas too, starting with basic algebra and finishing with complex numbers.
+    It's definitely only for those with maths experience but is a great module.
+    The resources are excellent, tutors are very helpful and there are plenty of people in the forums willing to help.
+    I have experience of A-Level maths and further maths, so I've already covered everything in this module, albeit
+    10 years ago. That made it much easier than I think many found it to be, but through the resources, forums and
+    tutors I think everyone found it manageable, even those without a background in maths.</p>
+    <h2>Section 2</h2>
+    <p>I'm starting the second section of my degree with
+    <a href='https://www.open.ac.uk/courses/modules/m250'>M250 - Object-oriented Java programming</a> which for many is
+    their first experience with object-oriented programming. First impressions are that this module can be a real struggle
+    for those who are new to programming. The module uses Objects First with Java, just like every intro to programming
+    course. While the textbook is fine and has all the basic information you need, to get a good understanding you will
+    really need to read outside the textbook, look at documentation and find information for yourself. TMA01 was due a
+    few weeks ago and that's exposed just how difficult many are finding this module, make sure you are ready for it
+    before signing up as this module won't give you all the answers. Thanks to my previous experience I found TMA01 to
+    be easy, scoring 98%, a promising start to the module.</p>
+    <h2>Plus More</h2>
+    <p>After almost a year out of work I started a new role in June this year in the IT industry, and I've got back into
+    the pool after a cycling accident in Jan 2023. While all of this has made 2024 a busy, and at times stressful year,
+    it's been great, and I'm feeling good about what the future holds. Another module is coming up soon, so time to and
+    M250 continues, so things are going to get even busier.</p>
+    </div>`,
+    previewContent: `<p>Wow, it's been a while!</p>
+    <p>I've been busy since the last time I posted here, I've completed the first section of my OU degree, started in a
+    new role in the IT industry, and got back to regularly exercising to keep myself a little healthier.</p>`,
+    tags: [
+      "OU",
+      "MST124",
+      "M250",
+      "Personal",
+    ],
   },
 ]
 

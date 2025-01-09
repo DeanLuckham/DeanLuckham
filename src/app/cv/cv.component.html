@@ -1,9 +1,31 @@
-<div id="content" class="text-white flex flex-grow justify-center items-center">
-  <div id="main" class="flex flex-col justify-start w-full max-w-6xl gap-6">
-    <h1 class="text-gray-300 font-extrabold text-7xl">Work in Progress</h1>
-    <p id="introduction" class="text-dark-gray text-lg">
-      I'm currently reformatting my CV to work on this site, for now you can download a pdf copy.
-    </p>
-    <app-fillButton href="{{s3Url}}CVMain.pdf" content="PDF Version"></app-fillButton>
+<div id="content" class="text-white flex flex-grow justify-center">
+  <div id="main" class="flex justify-start w-full gap-6">
+    <div id="cv" class="wide-only text-center flex flex-col items-center">
+      <div id="intro" class="full-height responsive flex flex-col justify-center gap-4">
+        <h1 class="text-secondary text-7xl font-bold">Dean Luckham</h1>
+        <h2 class="text-dark-gray text-2xl font-bold">Bognor Regis &bull; West Sussex</h2>
+        <h3 class="text-dark-gray text-xl font-bold">
+          A West Sussex based Computing & IT Student studying part time with the Open University with a range of experience
+          working administrative and supervisory roles, often providing IT support and guidance to colleagues and throughout
+          the business. Self taught IT specialist always looking to expand and improve on my knowledge and skills in engaging,
+          challenging environments.
+        </h3>
+      </div>
+      <div id="skills" class="full-height w-full flex flex-col items-center justify-center">
+        <div class="responsive h-full w-full flex flex-col justify-center gap-4">
+          <h1 class="text-secondary text-5xl font-bold">Skills & Experience</h1>
+        </div>
+      </div>
+    </div>
+    <div class="narrow-only responsive flex-col flex justify-center text-center">
+      <h2 class="text-gray-300 font-extrabold text-4xl">
+        This page is currently not tuned for narrow screens. Try using another device, rotating your device, or
+        you can <a href="{{s3Url}}CVMain.pdf" class="text-secondary hover:text-gray-300 duration-300">download a PDF copy of my CV</a>.
+      </h2>
+    </div>
+<!--    <div id="nav" class="w-1/6">-->
+<!--      <app-nav-menu></app-nav-menu>-->
+<!--    </div>-->
+<!--    <app-fillButton href="{{s3Url}}CVMain.pdf" content="Download" class="fixed bottom-0 left-0 m-4"></app-fillButton>-->
   </div>
 </div>
